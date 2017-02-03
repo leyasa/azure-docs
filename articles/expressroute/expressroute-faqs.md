@@ -163,7 +163,7 @@ We do not accept private prefixes (RFC1918) in the Public and Microsoft peering 
 BGP sessions will be dropped. They will be reset once the prefix count goes below the limit.
 
 ### What is the ExpressRoute BGP hold time? Can it be adjusted?
-The hold time is 180. The keep-alive messages are sent every 60 seconds. These are fixed settings on the Microsoft side that cannot be changed.
+The hold time is 180. The keep-alive messages are sent every 60 seconds. These are fixed settings on the Microsoft side that cannot be changed.  However, if a shorter hold time is set on the service provider, the Microsoft side will honor the smallerof the two hold times.
 
 ### After I advertise the default route (0.0.0.0/0) to my virtual networks, I can't activate Windows running on my Azure VMs. How to I fix this?
 The following steps will help Azure recognize the activation request:
