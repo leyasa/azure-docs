@@ -51,10 +51,14 @@ Use the following steps to connect to Azure Stack by using Azure CLI:
    ```
 
 3. Disable the TLS certificate validation by running the following command:
-
+For Windows:
    ```
    set NODE_TLS_REJECT_UNAUTHORIZED=0
    ```
+For Linux:   
+   ```
+   export NODE_TLS_REJECT_UNAUTHORIZED=0
+   ```   
    
 4. Sign in to the Azure Stack administrator or user account by using the following command, make sure to replace the <username> and the <Password> with your Azure Stack administrator or user Active Directory account name. 
    
